@@ -1,0 +1,15 @@
+lines (12 sloc)  187 Bytes
+---
+kind: pipeline
+type: docker
+name: linux-amd64
+
+platform:
+  arch: amd64
+  os: linux
+
+steps:
+- name: Test
+  image: ghcr.io/sushrut1101/docker/arch
+  commands:
+  - neofetch
